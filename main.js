@@ -30,6 +30,7 @@ if (board[clickedCellIndex]!="" || !isGameActive) {
 
 board[clickedCellIndex] = currentPlayer;
 clickedCell.textContent = currentPlayer;
+clickedCell.classList.add(currentPlayer);
 
 checkWin();
 
