@@ -87,5 +87,7 @@ function restartGame() {
     currentPlayer = "X"
     isGameActive = true;
     statusDisplay.textContent = "ходит Х";
-    cells.forEach(cell => {cell.textContent = "";})
-}
+cells.forEach(cell => {
+        cell.textContent = "";
+        cell.classList.remove('X', 'O'); 
+    });}
